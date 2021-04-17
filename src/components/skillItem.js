@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -23,17 +22,15 @@ const SkillsListItem = styled.li`
 
 const SkillItem = ({ skill: { iconPath, name, url, }, }) => (
   <SkillsListItem>
-    <Link href={url}>
-      <a>
-        <Image
-          src={iconPath}
-          width={16}
-          height={16}
-          alt={name}
-        />
-        <span>{name}</span>
-      </a>
-    </Link>
+    <a href={url}>
+      <Image
+        src={iconPath}
+        width={16}
+        height={16}
+        alt={name}
+      />
+      <span>{name}</span>
+    </a>
   </SkillsListItem>
 );
 

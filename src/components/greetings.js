@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import styled from 'styled-components'
 
 const GreetingsContainer = styled.div`
@@ -52,8 +51,7 @@ const GreetingsContainer = styled.div`
 const Greetings = () => (
   <GreetingsContainer>
     <div>
-      <Link href="https://igassmann.me/">
-        <a>
+        <a href="https://igassmann.me/">
           <Image
             src="/images/profile-picture.jpg"
             width={96}
@@ -61,8 +59,7 @@ const Greetings = () => (
             alt="Igor Gassmann"
           />
         </a>
-      </Link>
-      <h1>Hey <Link href="https://usestir.com/"><a>Stir</a></Link>, I’m <span>Igor Gassmann.</span></h1>
+      <h1>Hey <a href="https://usestir.com/">Stir</a>, I’m <span>Igor Gassmann.</span></h1>
     </div>
   </GreetingsContainer>
 );

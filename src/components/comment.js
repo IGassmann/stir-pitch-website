@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components'
 
@@ -43,8 +42,8 @@ const CommentContainer = styled.div`
 const Comment = () => (
   <CommentContainer>
     <blockquote>
-      <p>This website uses Stir's tech stack and aims to match its coding style. It was based upon <a href="https://usestir.com/">Stir's homepage</a> and it's publicly <Link href="https://github.com/IGassmann/stir-pitch-website"><a>available on GitHub</a></Link> to be reviewed.</p>
-      <p><Link href="http://nextjs.org/"><a>#nextjs</a></Link> <Link href="https://vercel.com/"><a>#vercel</a></Link> <Link href="https://styled-components.com/"><a>#styled-components</a></Link> <Link href="https://animate.style/"><a>#animate-css</a></Link></p>
+      <p>This website uses Stir's tech stack and aims to match its coding style. It was based upon <a href="https://usestir.com/">Stir's homepage</a> and it's publicly <a href="https://github.com/IGassmann/stir-pitch-website">available on GitHub</a> to be reviewed.</p>
+      <p><a href="http://nextjs.org/">#nextjs</a> <a href="https://vercel.com/">#vercel</a> <a href="https://styled-components.com/">#styled-components</a> <a href="https://animate.style/">#animate-css</a></p>
     </blockquote>
   </CommentContainer>
 );

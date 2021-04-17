@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import styled from 'styled-components';
 
 const WorkCardListItem = styled.li`
@@ -36,11 +35,9 @@ const WorkCard = ({ name, shortDescription, linkHref, imageSrc}) => {
   return (
     <WorkCardListItem>
       <h3><strong>{name}</strong> | <span>{shortDescription}</span></h3>
-      <Link href={linkHref}>
-        <a>
-          <Image src={imageSrc} width={384} height={218} alt={name} />
-        </a>
-      </Link>
+      <a href={linkHref}>
+        <Image src={imageSrc} width={384} height={218} alt={name} />
+      </a>
     </WorkCardListItem>
   );
 };
