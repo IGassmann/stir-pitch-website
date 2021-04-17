@@ -7,6 +7,7 @@ import Summary from '@/components/summary';
 import SkillList from '@/components/skillList';
 import Work from '@/components/work';
 import Comment from '@/components/comment';
+import Contact from '@/components/contact';
 import Links from '@/components/links';
 
 const IndexPage = () => {
@@ -23,6 +24,7 @@ const IndexPage = () => {
         <SkillList />
         <Work />
         <Comment />
+        <Contact />
         <Links />
       </Layout>
     </>
