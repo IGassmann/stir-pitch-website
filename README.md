@@ -1,6 +1,7 @@
 <h1 align="center">
   <a href="https://igor4stir.com/">
-    <img alt="Igor <> Stir" title="Igor <> Stir" src="https://github.com/IGassmann/stir-pitch-website/blob/main/public/apple-icon-144x-144.png" height="72" width="72">
+    <img alt="Igor <> Stir" title="Igor <> Stir" src="https://github.com/IGassmann/stir-pitch-website/blob/main/public/favicon/apple-icon-144x144.png" height="72" 
+width="72">
     <br>
     IGassmann's Pitch Website for Stir
   </a>
