@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React from 'react';
 import Layout from '@/components/layout';
 import Greetings from '@/components/greetings';
@@ -12,6 +13,9 @@ const IndexPage = () => {
 
   return (
     <>
+      <Head>
+        <title>Igor &lt;&gt; Stir</title>
+      </Head>
       <Layout>
         <Greetings />
         <Video />

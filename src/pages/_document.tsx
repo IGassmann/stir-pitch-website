@@ -49,7 +49,6 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png" />
           <meta name="theme-color" content="#ffffff" />
-          <title>Igor &lt;&gt; Stir</title>
           <meta name="title" content="Igor <> Stir" />
           <meta name="description" content="Igor Gassmann's pitch website for Stir." />
           <meta property="og:type" content="website" />
