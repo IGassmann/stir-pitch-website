@@ -1,0 +1,37 @@
+{
+  "name": "stir-pitch-website",
+  "version": "2.0.0",
+  "description": "Igor Gassmann's pitch website for Stir.",
+  "keywords": [
+    "stir",
+    "pitch",
+    "nextjs",
+    "styled-components",
+    "mux"
+  ],
+  "license": "Unlicense",
+  "homepage": "https://igor4stir.com/",
+  "repository": "https://github.com/IGassmann/stir-pitch-website",
+  "bugs": "https://github.com/IGassmann/stir-pitch-website/issues",
+  "author": "Igor Gassmann <igor@igassmann.me> (https://igassmann.me/)",
+  "main": "n/a",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "hls.js": "^1.0.1",
+    "next": "^10.1.3",
+    "next-plausible": "^1.6.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "@types/react": "^17.0.3",
+    "babel-plugin-styled-components": "^1.12.0",
+    "typescript": "^4.2.4"
+  }
+}

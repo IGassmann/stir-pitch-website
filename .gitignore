@@ -1,0 +1,17 @@
+# Node dependencies
+node_modules/
+
+# Log files
+*.log*
+
+# Compiled sources
+/dist/
+
+# Code coverage output
+**/coverage/
+
+# Local environment variables
+.env*.local
+
+# Vercel configuration
+/.vercel
