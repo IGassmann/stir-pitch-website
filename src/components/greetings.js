@@ -31,7 +31,7 @@ const GreetingsContainer = styled.div`
       letter-spacing: -0.02em;
       margin: 0 0 0 16px;
 
-      .stir {
+      a {
         background-color: rgb(138, 83, 162);
         background-image: linear-gradient(90deg, rgb(255, 100, 75) 0%, rgb(255, 95, 88) 20%, rgb(178, 39, 98) 95%, rgb(138, 83, 162) 100%);
         background-clip: text;
@@ -39,7 +39,7 @@ const GreetingsContainer = styled.div`
         -webkit-text-fill-color: transparent;
       }
 
-      .name {
+      span {
         display: inline-block;
         background-image: url(/images/bar.png);
         background-repeat: no-repeat;
@@ -62,7 +62,7 @@ const Greetings = () => (
           />
         </a>
       </Link>
-      <h1>Hey <span className="stir">Stir</span>, I’m <span className="name">Igor Gassmann.</span></h1>
+      <h1>Hey <Link href="https://usestir.com/"><a>Stir</a></Link>, I’m <span>Igor Gassmann.</span></h1>
     </div>
   </GreetingsContainer>
 );
