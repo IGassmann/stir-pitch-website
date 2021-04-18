@@ -70,8 +70,8 @@ class MyDocument extends Document {
           <meta name="twitter:description" content="Igor Gassmann's pitch website for Stir." />
           <meta name="twitter:image" content="https://igor4stir.com/og-image.png" />
           <meta name="twitter:player" content="https://igor4stir.com/embed" />
-          <meta name="twitter:player:width" content="1920" />
-          <meta name="twitter:player:height" content="1080" />
+          <meta name="twitter:player:width" content="640" />
+          <meta name="twitter:player:height" content="360" />
           <meta name="twitter:image" content="https://igor4stir.com/twitter-image" />
         </Head>
         <body>
