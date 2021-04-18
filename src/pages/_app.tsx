@@ -18,18 +18,15 @@ const theme = {
   },
 }
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
-
-  return (
-    <>
-      <GlobalStyle />
-      <PlausibleProvider domain="igor4stir.com" customDomain="https://stats.igor4stir.com" trackOutboundLinks>
-        <ThemeProvider theme={theme}>
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </PlausibleProvider>
-    </>
-  );
-};
+const MyApp = ({ Component, pageProps }: AppProps) => (
+  <>
+    <GlobalStyle />
+    <PlausibleProvider domain="igor4stir.com" customDomain="https://stats.igor4stir.com" trackOutboundLinks>
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </PlausibleProvider>
+  </>
+);
 
 export default MyApp;

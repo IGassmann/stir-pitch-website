@@ -10,25 +10,22 @@ import Comment from '@/components/comment';
 import Contact from '@/components/contact';
 import SocialLinks from '@/components/socialLinks';
 
-const IndexPage = () => {
-
-  return (
-    <>
-      <Head>
-        <title>Igor &lt;&gt; Stir</title>
-      </Head>
-      <Layout>
-        <Greetings />
-        <Video />
-        <Summary />
-        <SkillList />
-        <Work />
-        <Comment />
-        <Contact />
-        <SocialLinks />
-      </Layout>
-    </>
-  );
-};
+const IndexPage = () => (
+  <>
+    <Head>
+      <title>Igor &lt;&gt; Stir</title>
+    </Head>
+    <Layout>
+      <Greetings />
+      <Video />
+      <Summary />
+      <SkillList />
+      <Work />
+      <Comment />
+      <Contact />
+      <SocialLinks />
+    </Layout>
+  </>
+);
 
 export default IndexPage;

@@ -42,15 +42,13 @@ const ContactContainer = styled.div`
   }
 `
 
-const Contact = () => {
-  return (
-    <ContactContainer>
-      <div>
-        <h2>Reach me out.</h2>
-        <a href="mailto:igor@igassmann.me">Contact Me</a>
-      </div>
-    </ContactContainer>
-  );
-};
+const Contact = () => (
+  <ContactContainer>
+    <div>
+      <h2>Reach me out.</h2>
+      <a href="mailto:igor@igassmann.me">Contact Me</a>
+    </div>
+  </ContactContainer>
+);
 
 export default Contact;

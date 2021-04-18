@@ -56,17 +56,15 @@ const WorkContainer = styled.div`
   }
 `
 
-const Work = () => {
-  return (
-    <WorkContainer>
-      <div>
-        <h2>Projects I have worked on.</h2>
-        <ul>
-          {workProjects.map(project => <WorkCard {...project} key={project.name}/>)}
-        </ul>
-      </div>
-    </WorkContainer>
-  );
-};
+const Work = () => (
+  <WorkContainer>
+    <div>
+      <h2>Projects I have worked on.</h2>
+      <ul>
+        {workProjects.map(project => <WorkCard {...project} key={project.name}/>)}
+      </ul>
+    </div>
+  </WorkContainer>
+);
 
 export default Work;
