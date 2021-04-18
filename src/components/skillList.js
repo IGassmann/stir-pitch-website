@@ -107,9 +107,7 @@ const SkillList = () => (
     <div>
       <h2>The skills I have to offer.</h2>
       <div>
-        {Object.entries(skills).map(([key, value]) => {
-          return <SkillsCategory category={key} skills={value}/>;
-        })}
+        {Object.entries(skills).map(([key, value]) => <SkillsCategory category={key} skills={value} key={key} />)}
       </div>
     </div>
   </SkillsListContainer>

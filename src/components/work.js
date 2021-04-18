@@ -62,7 +62,7 @@ const Work = () => {
       <div>
         <h2>Projects I have worked on.</h2>
         <ul>
-          {workProjects.map(project => <WorkCard {...project} />)}
+          {workProjects.map(project => <WorkCard {...project} key={project.name}/>)}
         </ul>
       </div>
     </WorkContainer>
