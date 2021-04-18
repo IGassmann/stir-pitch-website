@@ -8,7 +8,7 @@ import SkillList from '@/components/skillList';
 import Work from '@/components/work';
 import Comment from '@/components/comment';
 import Contact from '@/components/contact';
-import Links from '@/components/links';
+import SocialLinks from '@/components/socialLinks';
 
 const IndexPage = () => {
 
@@ -25,7 +25,7 @@ const IndexPage = () => {
         <Work />
         <Comment />
         <Contact />
-        <Links />
+        <SocialLinks />
       </Layout>
     </>
   );
