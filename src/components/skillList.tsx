@@ -53,12 +53,12 @@ const skills: { Infrastructure: SkillInterface[]; Product: SkillInterface[] } = 
     ],
     "Infrastructure": [
       {
-        "name": "Google Cloud Platform (GCP)",
+        "name": "GCP",
         "iconPath": "/images/skills/gcp.png",
         "url": "https://cloud.google.com/gcp"
       },
       {
-        "name": "Amazon Web Services (AWS)",
+        "name": "AWS",
         "iconPath": "/images/skills/aws.png",
         "url": "https://aws.amazon.com/"
       },
@@ -109,6 +109,16 @@ const SkillsListContainer = styled.div`
 
     div:nth-child(2) {
       padding: 50px 0px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+
+    > div h2  {
+      font-size: 38px;
+      margin-block-start: -15px;
+      letter-spacing: -0.03em;
+      margin: 0;
     }
   }
 `

@@ -4,7 +4,6 @@ import Image from 'next/image';
 import styled from 'styled-components'
 
 const SocialLinkContainer = styled.a`
- 
   text-decoration: none;
   
   figure {
@@ -32,6 +31,19 @@ const SocialLinkContainer = styled.a`
       font-size: 18px;
       line-height: 160%;
       color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    figure figcaption {
+        font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    
+    figure > div {
+      width: 40px;
     }
   }
 `

@@ -37,6 +37,19 @@ const CommentContainer = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 700px) {
+
+    blockquote {
+      p {
+        font-size: 18px;
+
+        :nth-child(2) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
 `
 
 const Comment: React.FC = () => (

@@ -4,13 +4,13 @@ import Image from 'next/image';
 import styled from 'styled-components';
 
 const WorkCardListItem = styled.li`
-    margin: 50px 0;
+    margin: 50px 30px;
     display: block;
     border-radius: 16px;
 
     h3 {
       font-weight: normal;
-      font-size: 18px;
+      font-size: 20px;
       line-height: 110%;
       margin: 20px 0;
       text-align: left;

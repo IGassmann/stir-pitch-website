@@ -28,7 +28,7 @@ const GreetingsContainer = styled.div`
       font-size: 55px;
       line-height: 120%;
       letter-spacing: -0.02em;
-      margin: 0 0 0 16px;
+      margin: 20px 0 0 16px;
 
       a {
         background-color: rgb(138, 83, 162);
@@ -36,6 +36,7 @@ const GreetingsContainer = styled.div`
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        width: fit-content;
       }
 
       span {
@@ -44,6 +45,27 @@ const GreetingsContainer = styled.div`
         background-repeat: no-repeat;
         background-position: center bottom;
       }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+
+    > div h1  {
+      font-size: 30px;
+      letter-spacing: -0.03em;
+      margin-top: 10px;
+    }
+    
+    a {
+      width: 64px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    > div h1  {
+      font-size: 27px;
+      margin-top: 0;
+      width: 200px;
     }
   }
 `

@@ -64,8 +64,19 @@ const WorkContainer = styled.div`
     ul {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       padding: 50px 0;
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+
+    > div h2  {
+      font-size: 38px;
+      margin-block-start: -15px;
+      letter-spacing: -0.03em;
+      margin: 0;
     }
   }
 `

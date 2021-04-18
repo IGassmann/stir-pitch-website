@@ -12,6 +12,10 @@ const SummaryContainer = styled.div`
     margin: 20px 0 0;
     color: rgba(0, 0, 0, 0.5);
   }
+
+  @media screen and (max-width: 700px) {
+    font-size: 16px;
+  }
 `
 
 const Summary = () => (

@@ -17,7 +17,7 @@ const socialLinks: SocialLinkInterface[] = [
   {
     href: 'https://igassmann.me/',
     src: '/images/social-links/profile-picture-100x100.png',
-    name: 'Personal Website',
+    name: 'Website',
   },
   {
     href: 'https://github.com/IGassmann/',
@@ -47,6 +47,7 @@ const SocialLinksContainer = styled.div`
     padding: 0 20px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     flex-flow: row wrap;
     flex-grow: 0;
@@ -63,7 +64,19 @@ const SocialLinksContainer = styled.div`
       line-height: 40px;
       border-radius: 50%;
       text-align: center;
-      min-width: 200px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    li {
+      width: 100px;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    li {
+      width: 60px;
     }
   }
 `

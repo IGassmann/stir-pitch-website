@@ -20,6 +20,12 @@ const SkillsListItem = styled.li`
     margin-left: 8px;
     vertical-align: middle;
   }
+
+  @media screen and (max-width: 700px) {
+    a {
+      font-size: 16px;
+    }
+  }
 `
 
 interface SkillItemProps {

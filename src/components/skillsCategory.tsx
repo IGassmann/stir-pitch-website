@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const SkillsCategoryContainer = styled.div`
   box-shadow: rgb(57 47 86 / 8%) 0px 4px 64px 20px;
   border-radius: 20px;
-  width: 100%;
+  width: calc(100% - 140px);
   margin: 50px;
   display: inline-block;
   vertical-align: top;
@@ -37,6 +37,17 @@ const SkillsCategoryContainer = styled.div`
     margin-block-end: 16px;
     padding: 0;
     list-style: none;
+  }
+
+  @media screen and (max-width: 890px) {
+
+    :nth-of-type(2) {
+      margin-top: 30px !important;
+    }
+
+    h3 {
+      font-size: 28px;
+    }
   }
 `
 

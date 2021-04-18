@@ -12,6 +12,7 @@ const ContactContainer = styled.div`
     margin: 0 auto;
 
     h2 {
+      min-width: 200px;
       font-size: 55px;
       line-height: 120%;
       letter-spacing: -0.02em;
@@ -33,11 +34,29 @@ const ContactContainer = styled.div`
       transition: .1s ease-in-out;
       font-size: 18px;
       padding: 19px 0;
-      width: 226px;
+      width: 100%;
+      min-width: 155px;
+      max-width: 226px;
       display: inline-block;
       text-decoration: none;
       margin-top: 50px;
       text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    
+    padding: 150px 0;
+
+    > div h2  {
+      font-size: 30px;
+      margin-block-start: -15px;
+      letter-spacing: -0.03em;
+    }
+    
+    a {
+      font-size: 16px;
+      
     }
   }
 `
