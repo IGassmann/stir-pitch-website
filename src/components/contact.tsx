@@ -1,3 +1,4 @@
+import { usePlausible } from 'next-plausible';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -61,13 +62,17 @@ const ContactContainer = styled.div`
   }
 `
 
-const Contact: React.FC = () => (
-  <ContactContainer>
-    <div>
-      <h2>Reach me out.</h2>
-      <a href="mailto:igor@igassmann.me">Contact Me</a>
-    </div>
-  </ContactContainer>
-);
+const Contact: React.FC = () => {
+  const plausible = usePlausible()
+
+  return (
+    <ContactContainer>
+      <div>
+        <h2>Reach me out.</h2>
+        <a onClick={() => plausible('contact')} href="mailto:igor@igassmann.me">Contact Me</a>
+      </div>
+    </ContactContainer>
+  );
+};
 
 export default Contact;
