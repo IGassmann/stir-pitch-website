@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
+import React from 'react';
 import { ServerStyleSheet } from 'styled-components';
 
 class MyDocument extends Document {
@@ -54,12 +55,22 @@ class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://igor4stir.com" />
           <meta property="og:title" content="Igor <> Stir" />
+          <meta property="og:video" content="https://igor4stir.com/embed" />
+          <meta property="og:video:secure_url" content="https://igor4stir.com/embed" />
+          <meta property="og:video:type" content="video/mp4" />
+          <meta property="og:video:width" content="1920" />
+          <meta property="og:video:height" content="1080" />
           <meta property="og:image" content="https://igor4stir.com/og-image.png" />
-          <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="https://igor4stir.com" />
           <meta property="twitter:title" content="Igor <> Stir" />
-          <meta property="twitter:description" content="Igor Gassmann's pitch website for Stir." />
-          <meta property="twitter:image" content="https://igor4stir.com/twitter-image" />
+          <meta property="twitter:url" content="https://igor4stir.com" />
+          <meta name="twitter:card" content="player" />
+          <meta name="twitter:site" content="@i_gassmann" />
+          <meta name="twitter:description" content="Igor Gassmann's pitch website for Stir." />
+          <meta name="twitter:image" content="https://igor4stir.com/og-image.png" />
+          <meta name="twitter:player" content="https://igor4stir.com/embed" />
+          <meta name="twitter:player:width" content="1920" />
+          <meta name="twitter:player:height" content="1080" />
+          <meta name="twitter:image" content="https://igor4stir.com/twitter-image" />
         </Head>
         <body>
         <Main />

@@ -2,15 +2,23 @@ import React from 'react';
 import styled from 'styled-components'
 import VideoPlayer from '@/components/video-player';
 
+const StyledVideoPlayer = styled(VideoPlayer)``;
+
 const VideoContainer = styled.div`
   background-color: rgb(250, 250, 250);
+
+  ${StyledVideoPlayer} {
+    display: block;
+    margin: auto;
+    width: 1090px;
+    max-width: 100%;
+    cursor: pointer;
+  }
 `
 
 const Video = () => (
   <VideoContainer>
-    <VideoPlayer
-      src="https://stream.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk.m3u8"
-      poster="https://image.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk/thumbnail.png?time=0" />
+    <StyledVideoPlayer />
   </VideoContainer>
 );
 

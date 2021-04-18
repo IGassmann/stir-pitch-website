@@ -1,7 +1,10 @@
-import { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Hls from 'hls.js';
 
-const VideoPlayer = ({ src, poster }) => {
+const src= "https://stream.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk.m3u8";
+const poster= "https://image.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk/thumbnail.png?time=0";
+
+const VideoPlayer = ({ className }) => {
   const videoRef = useRef(null)
 
   useEffect(() => {
@@ -33,18 +36,7 @@ const VideoPlayer = ({ src, poster }) => {
   }, [src, videoRef])
 
   return (
-    <>
-      <video ref={videoRef} poster={poster} />
-      <style jsx>{`
-        video {
-          display: block;
-          margin: auto;
-          width: 1090px;
-          max-width: 100%;
-          cursor: pointer;
-        }
-      `}</style>
-    </>
+    <video ref={videoRef} poster={poster} className={className} />
   )
 }
 
