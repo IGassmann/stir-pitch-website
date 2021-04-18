@@ -60,8 +60,8 @@ class MyDocument extends Document {
           <meta property="og:video" content="https://stream.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk/low.mp4" />
           <meta property="og:video:secure_url" content="https://stream.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk/low.mp4" />
           <meta property="og:video:type" content="video/mp4" />
-          <meta property="og:video:width" content="1920" />
-          <meta property="og:video:height" content="1080" />
+          <meta property="og:video:width" content="640" />
+          <meta property="og:video:height" content="360" />
           <meta property="og:image" content="https://igor4stir.com/og-image.png" />
           <meta property="twitter:title" content="Igor <> Stir" />
           <meta property="twitter:url" content="https://igor4stir.com" />
