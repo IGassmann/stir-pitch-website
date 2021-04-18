@@ -17,6 +17,7 @@ const SkillsListItem = styled.li`
   
   a > span {
     margin-left: 8px;
+    vertical-align: middle;
   }
 `
 
