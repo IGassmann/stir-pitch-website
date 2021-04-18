@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ContactContainer = styled.div`
-  padding: 150px 0 80px;
+  padding: 150px 80px;
   text-align: center;
   
   > div {
