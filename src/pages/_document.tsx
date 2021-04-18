@@ -68,7 +68,7 @@ class MyDocument extends Document {
           <meta name="twitter:card" content="player" />
           <meta name="twitter:site" content="@i_gassmann" />
           <meta name="twitter:description" content="Igor Gassmann's pitch website for Stir." />
-          <meta name="twitter:image" content="https://igor4stir.com/og-image.png" />
+          <meta name="twitter:image" content="https://igor4stir.com/og-image.png?temp" />
           <meta name="twitter:player" content="https://igor4stir.com/embed" />
           <meta name="twitter:player:width" content="640" />
           <meta name="twitter:player:height" content="360" />
