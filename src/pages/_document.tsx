@@ -52,12 +52,13 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#ffffff" />
           <meta name="title" content="Igor <> Stir" />
           <meta name="description" content="Igor Gassmann's pitch website for Stir." />
-          <meta property="og:type" content="video.other" />
+          <meta property="og:type" content="video" />
           <meta property="og:url" content="https://igor4stir.com" />
           <meta property="og:title" content="Igor <> Stir" />
+          <meta property="og:site_name" content="Igor <> Stir" />
           <meta property="og:description" content="Igor Gassmann's pitch website for Stir." />
-          <meta property="og:video" content="https://igor4stir.com/embed" />
-          <meta property="og:video:secure_url" content="https://igor4stir.com/embed" />
+          <meta property="og:video" content="https://stream.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk/low.mp4" />
+          <meta property="og:video:secure_url" content="https://stream.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk/low.mp4" />
           <meta property="og:video:type" content="video/mp4" />
           <meta property="og:video:width" content="1920" />
           <meta property="og:video:height" content="1080" />
