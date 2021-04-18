@@ -1,3 +1,4 @@
+import { NextPage } from 'next';
 import Head from 'next/head'
 import React from 'react';
 import Layout from '@/components/layout';
@@ -10,7 +11,7 @@ import Comment from '@/components/comment';
 import Contact from '@/components/contact';
 import SocialLinks from '@/components/socialLinks';
 
-const IndexPage = () => (
+const IndexPage: NextPage = () => (
   <>
     <Head>
       <title>Igor &lt;&gt; Stir</title>

@@ -1,4 +1,5 @@
 import VideoPlayer from '@/components/video-player';
+import { NextPage } from 'next';
 import Head from 'next/head'
 import React from 'react';
 import styled from 'styled-components';
@@ -9,7 +10,7 @@ const StyledVideoPlayer = styled(VideoPlayer)`
   height:auto;
 `
 
-const EmbedPage = () => (
+const EmbedPage: NextPage = () => (
   <>
     <Head>
       <title>Igor &lt;&gt; Stir - Video</title>
