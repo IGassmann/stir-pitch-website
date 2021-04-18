@@ -55,6 +55,7 @@ class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://igor4stir.com" />
           <meta property="og:title" content="Igor <> Stir" />
+          <meta property="og:description" content="Igor Gassmann's pitch website for Stir." />
           <meta property="og:video" content="https://igor4stir.com/embed" />
           <meta property="og:video:secure_url" content="https://igor4stir.com/embed" />
           <meta property="og:video:type" content="video/mp4" />
