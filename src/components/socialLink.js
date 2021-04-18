@@ -35,14 +35,11 @@ const SocialLinkContainer = styled.a`
   }
 `
 
-const SocialLink = ({ href, src, svgPath, svgFillColor, caption }) => (
+const SocialLink = ({ href, src, caption }) => (
   <SocialLinkContainer href={href}>
 
     <figure>
-      {src
-        ? <Image src={src} width={50} height={50} />
-        : <svg viewBox="0 0 24 24" fill={svgFillColor}><path d={svgPath} /></svg>
-      }
+      <Image src={src} width={50} height={50} />
       <figcaption>{caption}</figcaption>
     </figure>
   </SocialLinkContainer>
