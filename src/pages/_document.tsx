@@ -52,7 +52,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#ffffff" />
           <meta name="title" content="Igor <> Stir" />
           <meta name="description" content="Igor Gassmann's pitch website for Stir." />
-          <meta property="og:type" content="website" />
+          <meta property="og:type" content="video.other" />
           <meta property="og:url" content="https://igor4stir.com" />
           <meta property="og:title" content="Igor <> Stir" />
           <meta property="og:description" content="Igor Gassmann's pitch website for Stir." />
