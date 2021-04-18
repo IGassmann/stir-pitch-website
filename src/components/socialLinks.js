@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const socialLinks = [
   {
     href: 'https://igassmann.me/',
-    src: '/images/social-links/personal-website.png',
+    src: '/images/social-links/profile-picture-100x100.png',
     caption: 'Personal Website',
   },
   {

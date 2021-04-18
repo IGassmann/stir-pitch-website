@@ -53,7 +53,7 @@ const Greetings = () => (
     <div>
         <a href="https://igassmann.me/">
           <Image
-            src="/images/profile-picture.jpg"
+            src="/images/social-links/profile-picture-192x192.png"
             width={96}
             height={96}
             alt="Igor Gassmann"

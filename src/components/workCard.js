@@ -35,7 +35,7 @@ const WorkCard = ({ name, shortDescription, linkHref, imageSrc}) => (
   <WorkCardListItem>
     <h3><strong>{name}</strong> | <span>{shortDescription}</span></h3>
     <a href={linkHref}>
-      <Image src={imageSrc} width={384} height={218} alt={name} />
+      <Image src={imageSrc} width={400} height={226} alt={name} />
     </a>
   </WorkCardListItem>
 );
