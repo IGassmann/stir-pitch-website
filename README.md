@@ -17,5 +17,5 @@ The website uses Stir's tech stack and aims to match its coding style. It was ba
 - Built with [Next.js](https://nextjs.org/)
 - Styled with [styled-components](https://styled-components.com/)
 - Animated with [Animate.css](https://animate.style/)
-- Video hosted on [Mux](https://mux.com/)
+- Video delivered by [Mux](https://mux.com/)
 - Hosted on [Vercel](https://vercel.com/)
