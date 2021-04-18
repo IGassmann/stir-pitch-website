@@ -5,11 +5,11 @@ const LayoutContainer = styled.div`
   background-color: rgb(255, 255, 255);
 `
 
-const layout = ({ children }) => (
+const Layout: React.FC = ({ children }) => (
   <LayoutContainer>
     {children}
   </LayoutContainer>
 );
 
 
-export default layout;
+export default Layout;

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { SkillInterface } from '@/components/skillList';
 import styled from 'styled-components';
 
 const SkillsListItem = styled.li`
@@ -21,7 +22,12 @@ const SkillsListItem = styled.li`
   }
 `
 
-const SkillItem = ({ skill: { iconPath, name, url, }, }) => (
+interface SkillItemProps {
+  /** The skill to be displayed. */
+  skill: SkillInterface;
+}
+
+const SkillItem: React.FC<SkillItemProps> = ({ skill: { iconPath, name, url, }, }) => (
   <SkillsListItem>
     <a href={url}>
       <Image

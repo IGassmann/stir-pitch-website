@@ -48,7 +48,7 @@ const GreetingsContainer = styled.div`
   }
 `
 
-const Greetings = () => (
+const Greetings: React.FC = () => (
   <GreetingsContainer>
     <div>
         <a href="https://igassmann.me/">

@@ -2,7 +2,21 @@ import WorkCard from '@/components/workCard';
 import React from 'react';
 import styled from 'styled-components';
 
-const workProjects = [
+export interface ProjectInterface {
+  /** The name of the project to be displayed. */
+  name: string;
+
+  /** A short description to be displayed next to the name. */
+  shortDescription: string;
+
+  /** The project's URL */
+  linkHref: string;
+
+  /** The relative path to the project's thumbnail. */
+  imageSrc: string;
+}
+
+const workProjects: ProjectInterface[] = [
   {
     name: 'Odeon',
     shortDescription: 'Video Platform',
@@ -56,7 +70,7 @@ const WorkContainer = styled.div`
   }
 `
 
-const Work = () => (
+const Work: React.FC = () => (
   <WorkContainer>
     <div>
       <h2>Projects I have worked on.</h2>

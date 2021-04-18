@@ -4,7 +4,12 @@ import Hls from 'hls.js';
 const src= "https://stream.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk.m3u8";
 const poster= "https://image.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk/thumbnail.png?time=0";
 
-const VideoPlayer = ({ className }) => {
+interface VideoPlayerProps {
+  /* Generated className if the component is used as a styled component. */
+  className?: string;
+}
+
+const VideoPlayer: React.FC<VideoPlayerProps> = ({ className }) => {
   const videoRef = useRef(null)
 
   useEffect(() => {

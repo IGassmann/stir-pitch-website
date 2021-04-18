@@ -1,3 +1,4 @@
+import { SocialLinkInterface } from '@/components/socialLinks';
 import React from 'react';
 import Image from 'next/image';
 import styled from 'styled-components'
@@ -35,12 +36,11 @@ const SocialLinkContainer = styled.a`
   }
 `
 
-const SocialLink = ({ href, src, caption }) => (
+const SocialLink: React.FC<SocialLinkInterface> = ({ href, src, name }) => (
   <SocialLinkContainer href={href}>
-
     <figure>
       <Image src={src} width={50} height={50} />
-      <figcaption>{caption}</figcaption>
+      <figcaption>{name}</figcaption>
     </figure>
   </SocialLinkContainer>
 );

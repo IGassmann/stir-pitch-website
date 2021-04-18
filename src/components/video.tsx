@@ -16,7 +16,7 @@ const VideoContainer = styled.div`
   }
 `
 
-const Video = () => (
+const Video: React.FC = () => (
   <VideoContainer>
     <StyledVideoPlayer />
   </VideoContainer>

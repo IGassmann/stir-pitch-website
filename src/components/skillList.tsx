@@ -2,10 +2,21 @@ import SkillsCategory from '@/components/skillsCategory';
 import React from 'react';
 import styled from 'styled-components';
 
-const skills = {
+export interface SkillInterface {
+  /** Relative path to the skill's icon. */
+  iconPath: string;
+
+  /** The name of the skill. */
+  name: string;
+
+  /** The website's url of the skill. */
+  url: string;
+}
+
+const skills: { Infrastructure: SkillInterface[]; Product: SkillInterface[] } = {
     "Product": [
       {
-        "name": "TypeScript",
+        name: "TypeScript",
         "iconPath": "/images/skills/typescript.png",
         "url": "https://www.typescriptlang.org/"
       },
@@ -102,7 +113,7 @@ const SkillsListContainer = styled.div`
   }
 `
 
-const SkillList = () => (
+const SkillList: React.FC = () => (
   <SkillsListContainer>
     <div>
       <h2>The skills I have to offer.</h2>

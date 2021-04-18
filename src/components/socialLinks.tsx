@@ -2,26 +2,37 @@ import React from 'react';
 import SocialLink from '@/components/socialLink';
 import styled from 'styled-components'
 
-const socialLinks = [
+export interface SocialLinkInterface {
+  /** The URL of the social link. */
+  href: string;
+
+  /** The relative path of the social link image. */
+  src: string;
+
+  /** The name of the social link. */
+  name: string;
+}
+
+const socialLinks: SocialLinkInterface[] = [
   {
     href: 'https://igassmann.me/',
     src: '/images/social-links/profile-picture-100x100.png',
-    caption: 'Personal Website',
+    name: 'Personal Website',
   },
   {
     href: 'https://github.com/IGassmann/',
     src: '/images/social-links/github.svg',
-    caption: 'GitHub',
+    name: 'GitHub',
   },
   {
     href: 'https://www.linkedin.com/in/igassmann/',
     src: '/images/social-links/linkedin.svg',
-    caption: 'LinkedIn',
+    name: 'LinkedIn',
   },
   {
     href: 'https://twitter.com/i_gassmann/',
     src: '/images/social-links/twitter.svg',
-    caption: 'Twitter',
+    name: 'Twitter',
   },
 ]
 
@@ -57,7 +68,7 @@ const SocialLinksContainer = styled.div`
   }
 `
 
-const SocialLinks = () => (
+const SocialLinks: React.FC = () => (
   <SocialLinksContainer>
     <ul>
       {socialLinks.map((socialLink, index) => (

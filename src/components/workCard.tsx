@@ -1,3 +1,4 @@
+import { ProjectInterface } from '@/components/work';
 import React from 'react';
 import Image from 'next/image';
 import styled from 'styled-components';
@@ -31,7 +32,7 @@ const WorkCardListItem = styled.li`
     }
 `
 
-const WorkCard = ({ name, shortDescription, linkHref, imageSrc}) => (
+const WorkCard: React.FC<ProjectInterface> = ({ name, shortDescription, linkHref, imageSrc}) => (
   <WorkCardListItem>
     <h3><strong>{name}</strong> | <span>{shortDescription}</span></h3>
     <a href={linkHref}>

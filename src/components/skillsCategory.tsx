@@ -1,5 +1,6 @@
 import React from 'react';
 import SkillItem from '@/components/skillItem';
+import { SkillInterface } from '@/components/skillList';
 import styled from 'styled-components';
 
 const SkillsCategoryContainer = styled.div`
@@ -39,7 +40,15 @@ const SkillsCategoryContainer = styled.div`
   }
 `
 
-const SkillsCategory = ({ category, skills }) => (
+interface SkillsCategoryProps {
+  /** The category of skills. */
+  category: string;
+
+  /** All the skills of the passed category. */
+  skills: SkillInterface[];
+}
+
+const SkillsCategory: React.FC<SkillsCategoryProps> = ({ category, skills }) => (
   <SkillsCategoryContainer>
     <h3>{category}</h3>
     <ul>

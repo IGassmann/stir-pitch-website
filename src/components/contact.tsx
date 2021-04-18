@@ -42,7 +42,7 @@ const ContactContainer = styled.div`
   }
 `
 
-const Contact = () => (
+const Contact: React.FC = () => (
   <ContactContainer>
     <div>
       <h2>Reach me out.</h2>

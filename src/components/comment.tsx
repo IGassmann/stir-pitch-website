@@ -39,7 +39,7 @@ const CommentContainer = styled.div`
   }
 `
 
-const Comment = () => (
+const Comment: React.FC = () => (
   <CommentContainer>
     <blockquote>
       <p>This website uses Stir's tech stack and aims to match its coding style. It was based upon <a href="https://usestir.com/">Stir's homepage</a> and it's publicly <a href="https://github.com/IGassmann/stir-pitch-website">available on GitHub</a> to be reviewed.</p>
