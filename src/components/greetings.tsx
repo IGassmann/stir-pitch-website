@@ -9,7 +9,7 @@ const GreetingsContainer = styled.div`
   text-align: center;
 
   > div {
-    max-width: 1090px;
+    max-width: 1050px;
     width: calc(100% - 40px);
     padding: 0px 20px;
     margin: 0px auto;

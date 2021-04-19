@@ -10,7 +10,7 @@ const VideoContainer = styled.div`
   ${StyledVideoPlayer} {
     display: block;
     margin: auto;
-    width: 1090px;
+    width: 1050px;
     max-width: 100%;
     cursor: pointer;
   }
