@@ -28,7 +28,7 @@ const Summary: React.FC = () => (
       full-time for almost three years with creators on our side.
     </p>
     <p>
-      I want to work alongisde people that are passionate about resolving problems for creators and
+      I want to work alongside people that are passionate about resolving problems for creators and
       that really understand them. I believe there&apos;s still a lot to be built in the creator
       space to satisfy the growing needs of creators and Stir is leading the way with its team and
       mission-driven approach.
