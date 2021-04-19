@@ -4,7 +4,7 @@ import Hls from 'hls.js';
 const src =
   'https://stream.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk.m3u8?default_subtitles_lang=en';
 const poster =
-  'https://image.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk/thumbnail.png?time=0';
+  'https://image.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk/thumbnail.jpg?time=0&width=1050&height=590';
 
 interface VideoPlayerProps {
   /* Generated className if the component is used as a styled component. */
