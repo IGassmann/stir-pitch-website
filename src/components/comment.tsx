@@ -3,16 +3,16 @@ import styled from 'styled-components'
 
 const CommentContainer = styled.div`
   background-color: rgb(0, 0, 0);
-  padding: 80px 0px;
+  padding: 80px 0;
   
   blockquote {
     background-color: rgba(255, 255, 255, 0.08);
+    text-align: center;
     width: calc(100% - 80px);
     max-width: 1050px;
-    margin: 0px auto;
-    border-radius: 32px;
+    margin: 0 auto;
     padding: 30px 20px;
-    text-align: center;
+    border-radius: 32px;
 
     p {
       color: rgba(255, 255, 255, 0.75);

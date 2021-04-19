@@ -1,7 +1,7 @@
 import { useMediaQuery } from '@/hooks';
 import React from 'react';
 import Image from 'next/image';
-import styled, { StyledComponentProps } from 'styled-components'
+import styled from 'styled-components'
 
 const GreetingsContainer = styled.div`
   background-color: ${props => props.theme.colors.secondaryBackground};
@@ -11,8 +11,8 @@ const GreetingsContainer = styled.div`
   > div {
     max-width: 1050px;
     width: calc(100% - 40px);
-    padding: 0px 20px;
-    margin: 0px auto;
+    padding: 0 20px;
+    margin: 0 auto;
 
     a {
       vertical-align: middle;
@@ -50,7 +50,7 @@ const GreetingsContainer = styled.div`
   }
 
   @media screen and (max-width: ${props => props.theme.sizes.medium}) {
-    > div h1  {
+    > div h1 {
       font-size: 30px;
       letter-spacing: -0.03em;
       margin-top: 10px;
@@ -58,7 +58,7 @@ const GreetingsContainer = styled.div`
   }
 
   @media screen and (max-width: ${props => props.theme.sizes.xSmall}) {
-    > div h1  {
+    > div h1 {
       font-size: 27px;
       margin-top: 0;
       width: 200px;

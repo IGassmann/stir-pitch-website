@@ -93,14 +93,14 @@ const skills: { infrastructure: SkillInterface[]; product: SkillInterface[] } = 
 
 const SkillsListContainer = styled.div`
   background-color: ${props => props.theme.colors.secondaryBackground};
-  padding: 150px 0px 80px;
+  padding: 150px 0 80px;
   text-align: center;
 
   > div {
     max-width: 950px;
     width: calc(100% - 40px);
-    padding: 0px 20px;
-    margin: 0px auto;
+    padding: 0 20px;
+    margin: 0 auto;
 
     h2 {
       font-size: 55px;
@@ -109,13 +109,13 @@ const SkillsListContainer = styled.div`
     }
 
     div:nth-child(2) {
-      padding: 50px 0px;
+      padding: 50px 0;
     }
   }
 
   @media screen and (max-width: ${props => props.theme.sizes.medium}) {
 
-    > div h2  {
+    > div h2 {
       font-size: 38px;
       margin-block-start: -15px;
       letter-spacing: -0.03em;

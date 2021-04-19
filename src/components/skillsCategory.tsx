@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const SkillsCategoryContainer = styled.div`
   transition: all 0.1s linear 0s;
-  box-shadow: rgb(57 47 86 / 8%) 0px 4px 64px 20px;
+  box-shadow: rgb(57 47 86 / 8%) 0 4px 64px 20px;
   border-radius: 20px;
   width: calc(100% - 140px);
   margin: 50px;
