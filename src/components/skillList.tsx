@@ -92,7 +92,7 @@ const skills: { infrastructure: SkillInterface[]; product: SkillInterface[] } = 
 }
 
 const SkillsListContainer = styled.div`
-  background-color: rgb(250, 250, 250);
+  background-color: ${props => props.theme.colors.secondaryBackground};
   padding: 150px 0px 80px;
   text-align: center;
 
@@ -113,7 +113,7 @@ const SkillsListContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: ${props => props.theme.sizes.medium}) {
 
     > div h2  {
       font-size: 38px;

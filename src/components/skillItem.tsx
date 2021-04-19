@@ -21,7 +21,7 @@ const SkillsListItem = styled.li`
     vertical-align: middle;
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: ${props => props.theme.sizes.medium}) {
     a {
       font-size: 16px;
     }

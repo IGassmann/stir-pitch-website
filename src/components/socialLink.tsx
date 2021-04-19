@@ -35,7 +35,7 @@ const SocialLinkContainer = styled.a`
     }
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: ${props => props.theme.sizes.medium}) {
     figure figcaption {
         font-size: 16px;
     }

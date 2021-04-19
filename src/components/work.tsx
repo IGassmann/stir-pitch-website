@@ -70,7 +70,7 @@ const WorkContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: ${props => props.theme.sizes.medium}) {
 
     > div h2  {
       font-size: 38px;

@@ -45,7 +45,7 @@ const WorkCardListItem = styled.li<WorkCardListProps>`
     border-radius: 20px;
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: ${props => props.theme.sizes.medium}) {
     h3 {
       font-size: 16px;
     }

@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app';
 import React, { Component } from 'react';
 import PlausibleProvider from 'next-plausible';
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { createGlobalStyle, DefaultTheme, ThemeProvider } from 'styled-components'
 import 'animate.css/animate.min.css';
 
 const GlobalStyle = createGlobalStyle`
@@ -13,10 +13,24 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const theme = {
+const theme: DefaultTheme = {
   colors: {
-    primary: '#0070f3',
+    primaryBackground: 'rgb(255, 255, 255)',
+    secondaryBackground: 'rgb(250, 250, 250)',
+    accent: 'rgb(113, 66, 187)',
+    primaryGradient: 'linear-gradient(90deg, rgb(255, 100, 75) 0%, rgb(255, 95, 88) 20%, rgb(178, 39, 98) 95%, rgb(138, 83, 162) 100%)',
+    secondaryGradient: 'linear-gradient(90deg, rgb(146, 88, 195) 10%, rgb(255, 95, 88) 40%, rgb(178, 39, 98) 95%, rgb(138, 83, 162) 100%)',
+    tertiaryGradient: 'linear-gradient(90deg, rgb(138, 83, 162) 0%, rgb(178, 39, 98) 30%, rgb(255, 95, 88) 51%, rgb(255, 124, 141) 100%)',
+    gradientFallback: 'rgb(138, 83, 162)',
   },
+  boxShadow:'rgb(57 47 86 / 8%) 0px 4px 64px 20px',
+  sizes: {
+    xSmall: '450px',
+    small: '600px',
+    medium: '700px',
+    large: '890px',
+    xLarge: '900px',
+  }
 }
 
 const MyApp = ({ Component, pageProps }: AppProps) => (

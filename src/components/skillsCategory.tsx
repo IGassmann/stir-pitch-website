@@ -25,8 +25,8 @@ const SkillsCategoryContainer = styled.div`
     line-height: 120%;
     margin: 16px 0;
     margin-block-end: 0;
-    background-color: rgb(138, 83, 162);
-    background-image: linear-gradient(90deg, rgb(138, 83, 162) 0%, rgb(178, 39, 98) 30%, rgb(255, 95, 88) 51%, rgb(255, 124, 141) 100%);
+    background-color: ${props => props.theme.colors.fallbackGradient};
+    background-image: ${props => props.theme.colors.tertiaryGradient};;
     background-clip: text;
     -webkit-background-clip: text;
     text-fill-color: transparent;
@@ -40,7 +40,7 @@ const SkillsCategoryContainer = styled.div`
     list-style: none;
   }
 
-  @media screen and (max-width: 890px) {
+  @media screen and (max-width: ${props => props.theme.sizes.large}) {
 
     :nth-of-type(2) {
       margin-top: 30px !important;

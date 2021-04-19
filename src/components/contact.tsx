@@ -17,8 +17,8 @@ const ContactContainer = styled.div`
       font-size: 55px;
       line-height: 120%;
       letter-spacing: -0.02em;
-      background-color: rgb(138, 83, 162);
-      background-image: linear-gradient(90deg, rgb(146, 88, 195) 10%, rgb(255, 95, 88) 40%, rgb(178, 39, 98) 95%, rgb(138, 83, 162) 100%);
+      background-color: ${props => props.theme.colors.fallbackGradient};
+      background-image: ${props => props.theme.colors.secondaryGradient};
       background-clip: text;
       -webkit-background-clip: text;
       text-fill-color: transparent;
@@ -45,7 +45,7 @@ const ContactContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: ${props => props.theme.sizes.medium}) {
     
     padding: 150px 0;
 

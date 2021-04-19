@@ -23,13 +23,13 @@ const CommentContainer = styled.div`
       
       a {
         text-decoration: none;
-        color: rgb(113, 66, 187);
+        color: ${props => props.theme.colors.accent};
       }
 
       :nth-child(2) {
         font-size: 18px;
-        background-color: rgb(138, 83, 162);
-        background-image: linear-gradient(90deg, rgb(138, 83, 162) 0%, rgb(178, 39, 98) 30%, rgb(255, 95, 88) 51%, rgb(255, 124, 141) 100%);
+        background-color: ${props => props.theme.colors.fallbackGradient};
+        background-image: ${props => props.theme.colors.tertiaryGradient};
         background-clip: text;
         -webkit-background-clip: text;
         text-fill-color: transparent;
@@ -38,7 +38,7 @@ const CommentContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: ${props => props.theme.sizes.medium}) {
 
     blockquote {
       p {

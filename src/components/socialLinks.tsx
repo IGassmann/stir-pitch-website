@@ -37,7 +37,7 @@ const socialLinks: SocialLinkInterface[] = [
 ]
 
 const SocialLinksContainer = styled.div`
-  background-color: rgb(250, 250, 250);
+  background-color: ${props => props.theme.colors.secondaryBackground};
   padding: 150px 0;
   text-align: center;
   
@@ -67,14 +67,14 @@ const SocialLinksContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: ${props => props.theme.sizes.xLarge}) {
     li {
       width: 100px;
     }
   }
 
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: ${props => props.theme.sizes.small}) {
     li {
       width: 60px;
     }

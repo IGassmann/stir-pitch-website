@@ -5,7 +5,7 @@ import VideoPlayer from '@/components/video-player';
 const StyledVideoPlayer = styled(VideoPlayer)``;
 
 const VideoContainer = styled.div`
-  background-color: rgb(250, 250, 250);
+  background-color: ${props => props.theme.colors.secondaryBackground};
 
   ${StyledVideoPlayer} {
     display: block;

@@ -13,7 +13,7 @@ const SummaryContainer = styled.div`
     color: rgba(0, 0, 0, 0.5);
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: ${props => props.theme.sizes.medium}) {
     font-size: 16px;
   }
 `
