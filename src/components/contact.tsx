@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
   return (
     <ContactContainer>
       <div>
-        <h2>Reach me out.</h2>
+        <h2>Reach out to me.</h2>
         <a onClick={() => plausible('contact')} href="mailto:igor@igassmann.me">
           Contact Me
         </a>
