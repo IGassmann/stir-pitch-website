@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import Hls from 'hls.js';
 
-const src= "https://stream.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk.m3u8";
+const src= "https://stream.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk.m3u8?default_subtitles_lang=en  ";
 const poster= "https://image.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk/thumbnail.png?time=0";
 
 interface VideoPlayerProps {
