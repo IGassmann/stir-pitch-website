@@ -2,6 +2,7 @@ import { AppProps } from 'next/app';
 import React, { Component } from 'react';
 import PlausibleProvider from 'next-plausible';
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import 'animate.css/animate.min.css';
 
 const GlobalStyle = createGlobalStyle`
   body {

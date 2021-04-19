@@ -86,7 +86,9 @@ const Work: React.FC = () => (
     <div>
       <h2>Projects I have worked on.</h2>
       <ul>
-        {workProjects.map(project => <WorkCard {...project} key={project.name}/>)}
+        {workProjects.map((project, index) => (
+          <WorkCard {...project} delayMultiplier={index} key={project.name}/>
+        ))}
       </ul>
     </div>
   </WorkContainer>

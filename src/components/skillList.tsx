@@ -1,6 +1,7 @@
 import SkillsCategory from '@/components/skillsCategory';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
+import Rellax from "rellax";
 
 export interface SkillInterface {
   /** Relative path to the skill's icon. */
@@ -13,8 +14,8 @@ export interface SkillInterface {
   url: string;
 }
 
-const skills: { Infrastructure: SkillInterface[]; Product: SkillInterface[] } = {
-    "Product": [
+const skills: { infrastructure: SkillInterface[]; product: SkillInterface[] } = {
+    product: [
       {
         name: "TypeScript",
         "iconPath": "/images/skills/typescript.png",
@@ -51,7 +52,7 @@ const skills: { Infrastructure: SkillInterface[]; Product: SkillInterface[] } = 
         "url": "https://www.postgresql.org/"
       }
     ],
-    "Infrastructure": [
+    infrastructure: [
       {
         "name": "GCP",
         "iconPath": "/images/skills/gcp.png",
@@ -123,15 +124,41 @@ const SkillsListContainer = styled.div`
   }
 `
 
-const SkillList: React.FC = () => (
-  <SkillsListContainer>
-    <div>
-      <h2>The skills I have to offer.</h2>
+const SkillList: React.FC = () => {
+  const rellaxRefUp = useRef<HTMLDivElement>();
+  const rellaxRefDown = useRef<HTMLDivElement>();
+
+  useEffect(() => {
+    const rellaxConfiguration = {
+      center: true,
+      wrapper: null,
+      round: true,
+      vertical: true,
+      horizontal: false,
+      breakpoints: [890, 890, 890]
+    };
+    new Rellax(rellaxRefUp.current, { // <---- Via useRef element
+      speed: -1,
+      ...rellaxConfiguration
+    });
+
+    new Rellax(rellaxRefDown.current, { // <---- Via useRef element
+      speed: +1,
+      ...rellaxConfiguration
+    });
+  }, []);
+
+  return (
+    <SkillsListContainer>
       <div>
-        {Object.entries(skills).map(([key, value]) => <SkillsCategory category={key} skills={value} key={key} />)}
+        <h2>The skills I have to offer.</h2>
+        <div>
+            <SkillsCategory category={'Product'} skills={skills.product} rellaxRef={rellaxRefUp}/>
+            <SkillsCategory category={'Infrastructure'} skills={skills.infrastructure} rellaxRef={rellaxRefDown}/>
+        </div>
       </div>
-    </div>
-  </SkillsListContainer>
-);
+    </SkillsListContainer>
+  );
+};
 
 export default SkillList;

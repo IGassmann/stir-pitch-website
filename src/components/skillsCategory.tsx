@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { MutableRefObject } from 'react';
 import SkillItem from '@/components/skillItem';
 import { SkillInterface } from '@/components/skillList';
 import styled from 'styled-components';
 
 const SkillsCategoryContainer = styled.div`
+  transition: all 0.1s linear 0s;
   box-shadow: rgb(57 47 86 / 8%) 0px 4px 64px 20px;
   border-radius: 20px;
   width: calc(100% - 140px);
@@ -57,13 +58,16 @@ interface SkillsCategoryProps {
 
   /** All the skills of the passed category. */
   skills: SkillInterface[];
+
+  /** Passthroughs reference to be use by rellax.js */
+  rellaxRef: MutableRefObject<HTMLDivElement | undefined>;
 }
 
-const SkillsCategory: React.FC<SkillsCategoryProps> = ({ category, skills }) => (
-  <SkillsCategoryContainer>
+const SkillsCategory: React.FC<SkillsCategoryProps> = ({ category, skills, rellaxRef }) => (
+  <SkillsCategoryContainer ref={rellaxRef} data-rellax-xs-speed="0" data-rellax-mobile-speed="0" data-rellax-tablet-speed="0">
     <h3>{category}</h3>
     <ul>
-      {skills.map(skill => <SkillItem skill={skill} key={skill.name} />)}
+      {skills.map(skill => <SkillItem skill={skill} key={skill.name}/>)}
     </ul>
   </SkillsCategoryContainer>
 );

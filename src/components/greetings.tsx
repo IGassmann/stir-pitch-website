@@ -82,7 +82,7 @@ const Greetings: React.FC = () => {
             alt="Igor Gassmann"
           />
         </a>
-        <h1>Hey <a href="https://usestir.com/">Stir</a>, I’m <span>Igor Gassmann.</span></h1>
+        <h1 className="animate__animated animate__fadeIn">Hey <a href="https://usestir.com/">Stir</a>, I’m <span>Igor Gassmann.</span></h1>
       </div>
     </GreetingsContainer>
   );
