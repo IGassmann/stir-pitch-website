@@ -1,4 +1,5 @@
 import { SocialLinkInterface } from '@/components/socialLinks';
+import { useMediaQuery } from '@/hooks';
 import React from 'react';
 import Image from 'next/image';
 import styled from 'styled-components'
@@ -39,23 +40,22 @@ const SocialLinkContainer = styled.a`
         font-size: 16px;
     }
   }
-
-  @media screen and (max-width: 600px) {
-    
-    figure > div {
-      width: 40px;
-    }
-  }
 `
 
-const SocialLink: React.FC<SocialLinkInterface> = ({ href, src, name }) => (
-  <SocialLinkContainer href={href}>
-    <figure>
-      <Image src={src} width={50} height={50} />
-      <figcaption>{name}</figcaption>
-    </figure>
-  </SocialLinkContainer>
-);
+const SocialLink: React.FC<SocialLinkInterface> = ({ href, src, name }) => {
+  const isPageWidthBelow700px = useMediaQuery('(max-width: 600px)')
+
+  const imageSize = isPageWidthBelow700px ? 40 : 50;
+
+  return (
+    <SocialLinkContainer href={href}>
+      <figure>
+        <Image src={src} width={imageSize} height={imageSize}/>
+        <figcaption>{name}</figcaption>
+      </figure>
+    </SocialLinkContainer>
+  );
+};
 
 
 export default SocialLink;

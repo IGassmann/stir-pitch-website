@@ -1,3 +1,4 @@
+import { useMediaQuery } from '@/hooks';
 import React from 'react';
 import Image from 'next/image';
 import styled from 'styled-components'
@@ -49,15 +50,10 @@ const GreetingsContainer = styled.div`
   }
 
   @media screen and (max-width: 700px) {
-
     > div h1  {
       font-size: 30px;
       letter-spacing: -0.03em;
       margin-top: 10px;
-    }
-    
-    a {
-      width: 64px;
     }
   }
 
@@ -70,21 +66,27 @@ const GreetingsContainer = styled.div`
   }
 `
 
-const Greetings: React.FC = () => (
-  <GreetingsContainer>
-    <div>
+const Greetings: React.FC = () => {
+  const isPageWidthBelow700px = useMediaQuery('(max-width: 700px)')
+
+  const imageSize = isPageWidthBelow700px ? 64 : 96;
+
+  return (
+    <GreetingsContainer>
+      <div>
         <a href="https://igassmann.me/">
           <Image
             src="/images/social-links/profile-picture-192x192.png"
-            width={96}
-            height={96}
+            width={imageSize}
+            height={imageSize}
             alt="Igor Gassmann"
           />
         </a>
-      <h1>Hey <a href="https://usestir.com/">Stir</a>, I’m <span>Igor Gassmann.</span></h1>
-    </div>
-  </GreetingsContainer>
-);
+        <h1>Hey <a href="https://usestir.com/">Stir</a>, I’m <span>Igor Gassmann.</span></h1>
+      </div>
+    </GreetingsContainer>
+  );
+};
 
 
 export default Greetings;
