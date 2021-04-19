@@ -2,14 +2,14 @@ import { SocialLinkInterface } from '@/components/socialLinks';
 import { useMediaQuery } from '@/hooks';
 import React from 'react';
 import Image from 'next/image';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const SocialLinkContainer = styled.a`
   text-decoration: none;
-  
+
   figure {
     margin: 0;
-  
+
     svg {
       display: inline-block;
       width: 50px;
@@ -18,16 +18,16 @@ const SocialLinkContainer = styled.a`
       font-style: normal;
       font-weight: normal;
       speak: none;
-      margin-right: .2em;
+      margin-right: 0.2em;
       text-align: center;
       font-variant: normal;
       text-transform: none;
       line-height: 1em;
-      margin-left: .2em;
+      margin-left: 0.2em;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
-  
+
     figcaption {
       font-size: 18px;
       line-height: 160%;
@@ -35,27 +35,26 @@ const SocialLinkContainer = styled.a`
     }
   }
 
-  @media screen and (max-width: ${props => props.theme.sizes.medium}) {
+  @media screen and (max-width: ${(props) => props.theme.sizes.medium}) {
     figure figcaption {
-        font-size: 16px;
+      font-size: 16px;
     }
   }
-`
+`;
 
 const SocialLink: React.FC<SocialLinkInterface> = ({ href, src, name }) => {
-  const isPageWidthBelow700px = useMediaQuery('(max-width: 600px)')
+  const isPageWidthBelow700px = useMediaQuery('(max-width: 600px)');
 
   const imageSize = isPageWidthBelow700px ? 40 : 50;
 
   return (
     <SocialLinkContainer href={href}>
       <figure>
-        <Image src={src} width={imageSize} height={imageSize}/>
+        <Image src={src} width={imageSize} height={imageSize} />
         <figcaption>{name}</figcaption>
       </figure>
     </SocialLinkContainer>
   );
 };
-
 
 export default SocialLink;

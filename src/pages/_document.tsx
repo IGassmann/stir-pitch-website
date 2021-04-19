@@ -1,20 +1,20 @@
-import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
+import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
 import React from 'react';
 import { ServerStyleSheet } from 'styled-components';
 
 class MyDocument extends Document {
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   static async getInitialProps(ctx: DocumentContext) {
-    const sheet = new ServerStyleSheet()
-    const originalRenderPage = ctx.renderPage
+    const sheet = new ServerStyleSheet();
+    const originalRenderPage = ctx.renderPage;
 
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            sheet.collectStyles(<App {...props} />),
-        })
+          enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
+        });
 
-      const initialProps = await Document.getInitialProps(ctx)
+      const initialProps = await Document.getInitialProps(ctx);
       return {
         ...initialProps,
         styles: (
@@ -23,12 +23,13 @@ class MyDocument extends Document {
             {sheet.getStyleElement()}
           </>
         ),
-      }
+      };
     } finally {
       sheet.seal();
     }
   }
 
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   render() {
     return (
       <Html lang="en-US">
@@ -42,7 +43,12 @@ class MyDocument extends Document {
           <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png" />
           <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png" />
           <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png" />
-          <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png" />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="/favicon/android-icon-192x192.png"
+          />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
@@ -57,8 +63,14 @@ class MyDocument extends Document {
           <meta property="og:title" content="Igor <> Stir" />
           <meta property="og:site_name" content="Igor <> Stir" />
           <meta property="og:description" content="Igor Gassmann's pitch website for Stir." />
-          <meta property="og:video" content="https://stream.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk/low.mp4" />
-          <meta property="og:video:secure_url" content="https://stream.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk/low.mp4" />
+          <meta
+            property="og:video"
+            content="https://stream.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk/low.mp4"
+          />
+          <meta
+            property="og:video:secure_url"
+            content="https://stream.mux.com/fP01JD01eB5Q00KVFekCvA4zEueY8wJr00EN2mLtytNkLYk/low.mp4"
+          />
           <meta property="og:video:type" content="video/mp4" />
           <meta property="og:video:width" content="640" />
           <meta property="og:video:height" content="360" />
@@ -74,11 +86,11 @@ class MyDocument extends Document {
           <meta name="twitter:image" content="https://igor4stir.com/twitter-image.png" />
         </Head>
         <body>
-        <Main />
-        <NextScript />
+          <Main />
+          <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 

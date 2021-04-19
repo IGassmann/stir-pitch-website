@@ -1,11 +1,11 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
 import VideoPlayer from '@/components/video-player';
 
 const StyledVideoPlayer = styled(VideoPlayer)``;
 
 const VideoContainer = styled.div`
-  background-color: ${props => props.theme.colors.secondaryBackground};
+  background-color: ${(props) => props.theme.colors.secondaryBackground};
 
   ${StyledVideoPlayer} {
     display: block;
@@ -14,13 +14,12 @@ const VideoContainer = styled.div`
     max-width: 100%;
     cursor: pointer;
   }
-`
+`;
 
 const Video: React.FC = () => (
   <VideoContainer>
     <StyledVideoPlayer />
   </VideoContainer>
 );
-
 
 export default Video;

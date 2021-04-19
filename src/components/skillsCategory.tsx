@@ -25,8 +25,8 @@ const SkillsCategoryContainer = styled.div`
     line-height: 120%;
     margin: 16px 0;
     margin-block-end: 0;
-    background-color: ${props => props.theme.colors.fallbackGradient};
-    background-image: ${props => props.theme.colors.tertiaryGradient};;
+    background-color: ${(props) => props.theme.colors.fallbackGradient};
+    background-image: ${(props) => props.theme.colors.tertiaryGradient};
     background-clip: text;
     -webkit-background-clip: text;
     text-fill-color: transparent;
@@ -40,8 +40,7 @@ const SkillsCategoryContainer = styled.div`
     list-style: none;
   }
 
-  @media screen and (max-width: ${props => props.theme.sizes.large}) {
-
+  @media screen and (max-width: ${(props) => props.theme.sizes.large}) {
     :nth-of-type(2) {
       margin-top: 30px !important;
     }
@@ -50,7 +49,7 @@ const SkillsCategoryContainer = styled.div`
       font-size: 28px;
     }
   }
-`
+`;
 
 interface SkillsCategoryProps {
   /** The category of skills. */
@@ -64,10 +63,17 @@ interface SkillsCategoryProps {
 }
 
 const SkillsCategory: React.FC<SkillsCategoryProps> = ({ category, skills, rellaxRef }) => (
-  <SkillsCategoryContainer ref={rellaxRef} data-rellax-xs-speed="0" data-rellax-mobile-speed="0" data-rellax-tablet-speed="0">
+  <SkillsCategoryContainer
+    ref={rellaxRef}
+    data-rellax-xs-speed="0"
+    data-rellax-mobile-speed="0"
+    data-rellax-tablet-speed="0"
+  >
     <h3>{category}</h3>
     <ul>
-      {skills.map(skill => <SkillItem skill={skill} key={skill.name}/>)}
+      {skills.map((skill) => (
+        <SkillItem skill={skill} key={skill.name} />
+      ))}
     </ul>
   </SkillsCategoryContainer>
 );

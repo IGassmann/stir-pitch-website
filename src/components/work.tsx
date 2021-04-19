@@ -41,12 +41,12 @@ const workProjects: ProjectInterface[] = [
     linkHref: 'https://github.com/IGassmann/nodejs-api',
     imageSrc: '/images/work/nodejs-api.png',
   },
-]
+];
 
 const WorkContainer = styled.div`
   padding: 150px 0 80px;
   text-align: center;
-  
+
   > div {
     max-width: 950px;
     width: calc(100% - 40px);
@@ -70,16 +70,15 @@ const WorkContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: ${props => props.theme.sizes.medium}) {
-
-    > div h2  {
+  @media screen and (max-width: ${(props) => props.theme.sizes.medium}) {
+    > div h2 {
       font-size: 38px;
       margin-block-start: -15px;
       letter-spacing: -0.03em;
       margin: 0;
     }
   }
-`
+`;
 
 const Work: React.FC = () => (
   <WorkContainer>
@@ -87,7 +86,7 @@ const Work: React.FC = () => (
       <h2>Projects I have worked on.</h2>
       <ul>
         {workProjects.map((project, index) => (
-          <WorkCard {...project} delayMultiplier={index} key={project.name}/>
+          <WorkCard {...project} delayMultiplier={index} key={project.name} />
         ))}
       </ul>
     </div>

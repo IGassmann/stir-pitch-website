@@ -1,6 +1,6 @@
 import React from 'react';
 import SocialLink from '@/components/socialLink';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export interface SocialLinkInterface {
   /** The URL of the social link. */
@@ -34,13 +34,13 @@ const socialLinks: SocialLinkInterface[] = [
     src: '/images/social-links/twitter.svg',
     name: 'Twitter',
   },
-]
+];
 
 const SocialLinksContainer = styled.div`
-  background-color: ${props => props.theme.colors.secondaryBackground};
+  background-color: ${(props) => props.theme.colors.secondaryBackground};
   padding: 150px 0;
   text-align: center;
-  
+
   ul {
     max-width: 950px;
     width: calc(100% - 40px);
@@ -53,7 +53,7 @@ const SocialLinksContainer = styled.div`
     flex-grow: 0;
     flex-shrink: 0;
     list-style: none;
-    
+
     li {
       padding: 0;
       margin: 0 8px;
@@ -67,31 +67,29 @@ const SocialLinksContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: ${props => props.theme.sizes.xLarge}) {
+  @media screen and (max-width: ${(props) => props.theme.sizes.xLarge}) {
     li {
       width: 100px;
     }
   }
 
-
-  @media screen and (max-width: ${props => props.theme.sizes.small}) {
+  @media screen and (max-width: ${(props) => props.theme.sizes.small}) {
     li {
       width: 60px;
     }
   }
-`
+`;
 
 const SocialLinks: React.FC = () => (
   <SocialLinksContainer>
     <ul>
       {socialLinks.map((socialLink, index) => (
         <li key={index}>
-          <SocialLink {...socialLink}/>
+          <SocialLink {...socialLink} />
         </li>
       ))}
     </ul>
   </SocialLinksContainer>
 );
-
 
 export default SocialLinks;

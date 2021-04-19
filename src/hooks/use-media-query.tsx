@@ -14,7 +14,7 @@ const useMediaQuery = (query: string): boolean => {
 
     // Check for older browser
     if (mediaQueryList.addEventListener) {
-      mediaQueryList.addEventListener('change',handleWidthChange);
+      mediaQueryList.addEventListener('change', handleWidthChange);
       return () => mediaQueryList.removeEventListener('change', handleWidthChange);
     } else {
       mediaQueryList.addListener(handleWidthChange);

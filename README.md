@@ -8,7 +8,7 @@ width="72">
 </h1>
 <br>
 
-This website has been built as a pitch for Stir. Stir is a startup that builds tools for creators 
+This website has been built as a pitch for Stir. Stir is a startup that builds tools for creators
 and their collaborators and empowers them to run great businesses.
 
 The website uses Stir's tech stack and aims to match its coding style. It was based upon

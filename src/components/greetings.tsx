@@ -1,10 +1,10 @@
 import { useMediaQuery } from '@/hooks';
 import React from 'react';
 import Image from 'next/image';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const GreetingsContainer = styled.div`
-  background-color: ${props => props.theme.colors.secondaryBackground};
+  background-color: ${(props) => props.theme.colors.secondaryBackground};
   padding: 70px 20px 70px;
   text-align: center;
 
@@ -32,8 +32,8 @@ const GreetingsContainer = styled.div`
       margin: 20px 0 0 16px;
 
       a {
-        background-color: ${props => props.theme.colors.gradientFallback};
-        background-image: ${props => props.theme.colors.primaryGradient};
+        background-color: ${(props) => props.theme.colors.gradientFallback};
+        background-image: ${(props) => props.theme.colors.primaryGradient};
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -49,7 +49,7 @@ const GreetingsContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: ${props => props.theme.sizes.medium}) {
+  @media screen and (max-width: ${(props) => props.theme.sizes.medium}) {
     > div h1 {
       font-size: 30px;
       letter-spacing: -0.03em;
@@ -57,17 +57,17 @@ const GreetingsContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: ${props => props.theme.sizes.xSmall}) {
+  @media screen and (max-width: ${(props) => props.theme.sizes.xSmall}) {
     > div h1 {
       font-size: 27px;
       margin-top: 0;
       width: 200px;
     }
   }
-`
+`;
 
 const Greetings: React.FC = () => {
-  const isPageWidthBelow700px = useMediaQuery('(max-width: 700px)')
+  const isPageWidthBelow700px = useMediaQuery('(max-width: 700px)');
 
   const imageSize = isPageWidthBelow700px ? 64 : 96;
 
@@ -82,11 +82,12 @@ const Greetings: React.FC = () => {
             alt="Igor Gassmann"
           />
         </a>
-        <h1 className="animate__animated animate__fadeIn">Hey <a href="https://usestir.com/">Stir</a>, I’m <span>Igor Gassmann.</span></h1>
+        <h1 className="animate__animated animate__fadeIn">
+          Hey <a href="https://usestir.com/">Stir</a>, I’m <span>Igor Gassmann.</span>
+        </h1>
       </div>
     </GreetingsContainer>
   );
 };
-
 
 export default Greetings;
