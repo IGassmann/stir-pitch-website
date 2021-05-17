@@ -11,8 +11,8 @@ width="72">
 This website has been built as a pitch for Stir. Stir is a startup that builds tools for creators
 and their collaborators and empowers them to run great businesses.
 
-The website uses Stir's tech stack and aims to match its coding style. It was based upon
-[Stir's homepage](https://usestir.com/).
+The website uses Stir's tech stack and aims to match its coding style. It was based upon [the old
+Stir's landing page](https://web.archive.org/web/20210514055850if_/https://usestir.com/).
 
 - Built with [Next.js](https://nextjs.org/)
 - Styled with [styled-components](https://styled-components.com/)

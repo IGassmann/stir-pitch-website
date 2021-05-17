@@ -56,7 +56,11 @@ const Comment: React.FC = () => (
     <blockquote>
       <p>
         This website uses Stir&apos;s tech stack and aims to match its coding style. It was based
-        upon <a href="https://usestir.com/">Stir&apos;s homepage</a> and it&apos;s publicly{' '}
+        upon{' '}
+        <a href="https://web.archive.org/web/20210514055850if_/https://usestir.com/">
+          the old Stir&apos;s landing page
+        </a>{' '}
+        and it&apos;s publicly{' '}
         <a href="https://github.com/IGassmann/stir-pitch-website">available on GitHub</a> to be
         reviewed.
       </p>
